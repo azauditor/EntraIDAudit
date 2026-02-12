@@ -8,7 +8,7 @@ If you are using Microsoft Graph, execute the following PowerShell commands as a
 Connect-MgGraph -Scopes "OnPremDirectorySynchronization.Read.All"   
 (Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt
 ```
-    a)	The results will be exported in the current working directory
+Note: The results will be exported in the current working directory
 
 ## Users Export
 
