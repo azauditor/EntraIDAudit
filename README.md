@@ -1,6 +1,16 @@
 # EntraAudit
 Due to Azure Entra ID being used for the management of a significant application, we will need to review the need for administrative access, enforcement of secure passwords, and the enforcement of MFA. Therefore, we would like to receive the items listed below. Microsoft links are provided for easy access, including the setting of custom managed views to gather non-default attributes that are relevant in performing the IT audit work of your Entra tenant.
 
+## Cloud Password Policy
+
+If you are using Microsoft Graph:
+```
+1.	Connect-MgGraph -Scopes "OnPremDirectorySynchronization.Read.All" 
+    a)	Note you need the necessary permissions to access the above area (Global Admin generally must approve).
+2.	(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt
+    a)	The results will be exported in the current working directory
+```
+
 ## Users Export
 
 ```
