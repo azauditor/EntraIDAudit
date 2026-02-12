@@ -3,26 +3,22 @@ Due to Azure Entra ID being used for the management of a significant application
 
 ## Cloud Password Policy
 
-If you are using Microsoft Graph, execute the PowerShell commands:
-1.	`Connect-MgGraph -Scopes "OnPremDirectorySynchronization.Read.All"`
-   
-    a)	Note you need the necessary permissions to access the above area (Global Admin generally must approve).
-3.	`(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt`
-   
+If you are using Microsoft Graph, execute the following PowerShell commands as an administrator:
+```
+Connect-MgGraph -Scopes "OnPremDirectorySynchronization.Read.All"   
+(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt
+```
     a)	The results will be exported in the current working directory
 
 ## Users Export
 
 ```
 Using Microsoft Entra Admin Center (GUI)
-1. Sign in to Microsoft Entra Admin Center.
-2. Navigate to Identity > Users > All users.
-3. Click Download users at the top.
-4. Choose the file format (CSV) and click Download to export the list.
+1. Use the link below to access [Identity > Users > All users] and apply filters for necessary account attributes.
+2. Choose the file format (CSV) and click Download to export the list.
 ```
-Link to skip to step 3:
 ```
-https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers
+https://entra.microsoft.com/#view/Microsoft_AAD_UsersAndTenants/UserManagementMenuBlade/~/AllUsers/filter/%257B%257D/select/displayName%2CuserPrincipalName%2CuserType%2ConPremisesSyncEnabled%2Cidentities%2CcompanyName%2CcreationType%2CaccountEnabled%2ConPremisesImmutableId%2Cdepartment%2CjobTitle%2CsignInActivity%2CsignInActivityNonInteractive%2CemployeeId%2ClastPasswordChangeDateTime%2CgivenName%2Csurname%2ConPremisesSamAccountName%2CpasswordPolicies%2CpasswordProfile
 ```
 
 ## Privileged Identity Management Export
