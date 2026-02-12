@@ -5,8 +5,10 @@ Due to Azure Entra ID being used for the management of a significant application
 
 If you are using Microsoft Graph, execute the PowerShell commands:
 1.	`Connect-MgGraph -Scopes "OnPremDirectorySynchronization.Read.All"`
+   
     a)	Note you need the necessary permissions to access the above area (Global Admin generally must approve).
-2.	`(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt`
+3.	`(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt`
+   
     a)	The results will be exported in the current working directory
 ```
 
