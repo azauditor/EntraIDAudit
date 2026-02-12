@@ -10,7 +10,6 @@ If you are using Microsoft Graph, execute the PowerShell commands:
 3.	`(Get-MgDirectoryOnPremiseSynchronization).Features | fl | Out-File MgDirectoryOnPremiseSynchronization.txt`
    
     a)	The results will be exported in the current working directory
-```
 
 ## Users Export
 
