@@ -116,7 +116,7 @@ Link to skip to step 4:
 https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies/menuId//fromNav/Identity
 ```
 
-## Authentication Methods User Registration DetailsExport
+## Authentication Methods User Registration Details Export
 ```
 Using Microsoft Entra Admin Center (GUI)
 1. Sign in to Microsoft Entra Admin Center.
