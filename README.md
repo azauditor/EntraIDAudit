@@ -116,6 +116,19 @@ Link to skip to step 4:
 https://entra.microsoft.com/#view/Microsoft_AAD_ConditionalAccess/ConditionalAccessBlade/~/Policies/menuId//fromNav/Identity
 ```
 
+## Authentication Methods User Registration DetailsExport
+```
+Using Microsoft Entra Admin Center (GUI)
+1. Sign in to Microsoft Entra Admin Center.
+2. Navigate to Identity > Protection > Authentication Methods.
+3. Click on User Registration Details (left menu).
+4. Click the Download button at the top to generate an export of the presented table.
+```
+Link to skip to step 4:
+```
+https://entra.microsoft.com/?l=en.en-us#view/Microsoft_AAD_IAM/AuthenticationMethodsMenuBlade/~/UserRegistrationDetails/fromNav/
+```
+
 ## Screenshot of the password protection screen to show lockout threshold, lockout duration, and banned password configurations
 ```
 Using Microsoft Entra Admin Center (GUI)
